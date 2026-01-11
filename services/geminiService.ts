@@ -2,8 +2,7 @@
 import { GoogleGenAI, Chat } from "@google/genai";
 import { UserInfo, InterpersonalScores, ChatMessage } from "../types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || "" });
-
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_API_KEY || "" });
 export const analyzePropensity = async (userInfo: UserInfo, scores: InterpersonalScores) => {
   const prompt = `
     당신은 기업 인사 및 리더십 커뮤니케이션 전문가입니다. 다음 리더의 FIRO-B(대인관계지향성 진단) 결과를 분석해주세요.
