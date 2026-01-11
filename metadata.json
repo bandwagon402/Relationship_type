@@ -1,0 +1,7 @@
+{
+  "name": "리더 대인관계 & 성과피드백 마스터",
+  "description": "대인관계성향 진단 결과 분석과 이를 기반으로 한 성과피드백 시뮬레이션 및 전문가 진단을 제공하는 앱입니다.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
